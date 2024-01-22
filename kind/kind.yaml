@@ -10,7 +10,7 @@ kubeadmConfigPatches:
   apiServer:
     extraArgs:
       # dex will be deployed in `dex` namespace, exposed by `dex` svc
-      oidc-issuer-url: https://dex.dex.svc:32000
+      oidc-issuer-url: https://dex-dev.matveeva.space:32000
       # the client-id that is inbuilt in the example-app
       oidc-client-id: example-app
       # the CA that we generated for Dex
