@@ -68,7 +68,7 @@ metadata:
   name: dex-config
 data:
   config.yaml: |
-    issuer: https://dex.dex.svc:32000
+    issuer: https://dex-dev.matveeva.space:32000
     storage:
       type: kubernetes
       config:
