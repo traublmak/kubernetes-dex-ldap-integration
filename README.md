@@ -79,6 +79,9 @@ For that, we may simply follow these steps:
 3. Use the user to access Kubernetes
 
     ```sh
+    # Krew (macOS, Linux, Windows and ARM)
+    # install krew first!
+    $ kubectl krew install oidc-login
     $ kubectl --user=oidc get nodes
     ```
 
