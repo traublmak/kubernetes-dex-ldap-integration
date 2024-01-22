@@ -94,7 +94,7 @@ log "Creating a proxy to access Dex directly from laptop ..."
 SVC_PORT="$(kubectl get -n dex svc/dex -o json | jq '.spec.ports[0].nodePort')"
 docker run -d --restart always \
     --name dex-kind-proxy-$SVC_PORT \
-    --publish 127.0.0.1:$SVC_PORT:$SVC_PORT \
+    --publish 0.0.0.0:$SVC_PORT:$SVC_PORT \
     --link dex-ldap-cluster-control-plane:target \
     --network kind \
     alpine/socat -dd \
