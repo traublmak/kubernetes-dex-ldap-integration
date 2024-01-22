@@ -3,7 +3,7 @@
     "hosts": [
       "localhost",
       "127.0.0.1",
-      "dex.dex.svc"
+      "dex-dev.matveeva.space"
     ],
     "key": {
       "algo": "ecdsa",
