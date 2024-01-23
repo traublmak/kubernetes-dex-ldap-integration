@@ -122,7 +122,7 @@ data:
     staticClients:
     - id: example-app
       redirectURIs:
-      - 'http://127.0.0.1:5555/callback'
+      - 'http://localhost:8000'
       name: 'Example App'
       secret: ZXhhbXBsZS1hcHAtc2VjcmV0
       
