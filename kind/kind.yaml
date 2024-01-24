@@ -22,6 +22,18 @@ nodes:
         # email will be used as the claim
         oidc-username-claim: email
         oidc-groups-claim: groups
+    kind: InitConfiguration
+      nodeRegistration:
+        kubeletExtraArgs:
+          node-labels: "ingress-ready=true"
+    extraPortMappings:
+    - containerPort: 80
+      hostPort: 80
+      protocol: TCP
+    - containerPort: 443
+      hostPort: 443
+      protocol: TCP
+
   extraMounts:
   - hostPath: "${PROJECT_ROOT}/tls-setup/_certs"
     containerPath: /etc/ssl/certs/dex
