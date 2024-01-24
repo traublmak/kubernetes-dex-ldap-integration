@@ -9,4 +9,9 @@ spec:
     email: traublemak@yandex.ru
     privateKeySecretRef:
       name: le-clusterissuer
-    http01: {}
+    solvers:
+      # An empty 'selector' means that this solver matches all domains
+      - selector: {}
+        http01:
+          ingress:
+            ingressClassName: nginx
