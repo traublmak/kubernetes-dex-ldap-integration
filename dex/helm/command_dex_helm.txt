@@ -1,4 +1,10 @@
 helm install dex dex/dex --namespace dex --create-namespace --version 0.2.0 --values dex-value.yaml
+helm install dex dex/dex --namespace dex --create-namespace --version 0.2.0 --values dex-value.yaml ---dry-run
 
 
 helm install dex-k8s-authenticator skm/dex-k8s-authenticator --namespace dex --version 0.0.1 --values dex-k8s-authenticator.yaml
+
+
+helm upgrade --install ingress-nginx ingress-nginx \
+--repo https://kubernetes.github.io/ingress-nginx \
+--namespace ingress-nginx --create-namespace
