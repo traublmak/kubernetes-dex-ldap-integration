@@ -2,7 +2,6 @@ apiVersion: certmanager.k8s.io/v1alpha1
 kind: Certificate
 metadata:
   name: cert-auth-dex
-  namespace: kube-system
 spec:
   secretName: cert-auth-dex
   dnsNames:
@@ -21,7 +20,6 @@ apiVersion: certmanager.k8s.io/v1alpha1
 kind: Certificate
 metadata:
   name: cert-auth-login
-  namespace: kube-system
 spec:
   secretName: cert-auth-login
   dnsNames:
