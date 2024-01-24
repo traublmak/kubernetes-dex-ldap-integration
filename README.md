@@ -429,6 +429,16 @@ dex-5f97556766-kcfvl   1/1     Running   1          1h28m
 
 Perfect!
 
+## Debug
+you can test your Dex configuration with the following URL:
+
+https://dex.yourdomain.com/.well-known/openid-configuration
+
+Sample app:
+The default redirect uri for sample app is http://127.0.0.1:5555/callback
+Sample app can login and provide you token
+https://dexidp.io/docs/kubernetes/
+
 ## Clean Up
 
 ```sh

@@ -1,0 +1,4 @@
+helm install dex dex/dex --namespace dex --create-namespace --version 0.2.0 --values dex-value.yaml
+
+
+helm install dex-k8s-authenticator skm/dex-k8s-authenticator --namespace dex --version 0.0.1 --values dex-k8s-authenticator.yaml
