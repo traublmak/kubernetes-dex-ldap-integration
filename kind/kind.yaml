@@ -7,7 +7,7 @@ nodes:
 - role: control-plane
   # patch the generated kubeadm config with some extra settings
   kubeadmConfigPatches:
-  - |
+    - |
     kind: ClusterConfiguration
     metadata:
       name: config
