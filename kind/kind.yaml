@@ -22,7 +22,7 @@ nodes:
         # email will be used as the claim
         oidc-username-claim: email
         oidc-groups-claim: groups
-    - |
+  - |
     kind: InitConfiguration
       nodeRegistration:
         kubeletExtraArgs:
