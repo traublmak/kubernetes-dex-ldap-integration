@@ -24,7 +24,7 @@ ingress:
         - path: /
           pathType: ImplementationSpecific
   tls:
-    - secretName: dex-tls
+    - secretName: dex-tls1
       hosts:
         - dex-dev.matveeva.space
 
