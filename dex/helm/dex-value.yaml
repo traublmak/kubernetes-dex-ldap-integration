@@ -17,14 +17,14 @@ ingress:
   className: nginx
   annotations:
     kubernetes.io/tls-acme: "true"
-    cert-manager.io/cluster-issuer: le-clusterissuer-staging
+    cert-manager.io/cluster-issuer: selfsigned-cluster-issuer
   hosts:
     - host: dex-dev.matveeva.space
       paths:
         - path: /
           pathType: ImplementationSpecific
   tls:
-    - secretName: dex-tls1
+    - secretName: dex-ss-tls
       hosts:
         - dex-dev.matveeva.space
 
