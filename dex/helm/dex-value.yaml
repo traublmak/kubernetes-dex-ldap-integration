@@ -29,7 +29,7 @@ ingress:
         - dex-dev.matveeva.space
 
 config:
-  issuer: https://dex-dev.matveeva.space:32000
+  issuer: https://dex-dev.matveeva.space
   storage:
     type: kubernetes
     config:
