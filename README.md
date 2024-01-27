@@ -251,6 +251,7 @@ kubectl apply --namespace dex -f dex/dex.yaml
 ```
 
 ### Enabling proxy to Dex
+More beautfil way here - https://kind.sigs.k8s.io/docs/user/ingress/
 
 As the Kubernetes is powered by `kind`, we need to do something extra to access the `Dex`.
 
